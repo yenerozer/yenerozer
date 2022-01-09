@@ -1,0 +1,36 @@
+// program that takes password and username
+import java.util.Scanner;
+public class Solution {
+    public static void main(String[] args) {
+            Scanner input = new Scanner(System.in);
+            String userName, password, y, password1;
+            System.out.print("ENTER YOUR USERNAME: "); //USERNAME: patika
+            userName = input.nextLine();
+            System.out.print("ENTER YOUR PASSWORD: "); // PASSWORD: java123
+            password = input.nextLine();
+            if(userName.equals("patika") && password.equals("java123")) {
+                System.out.println("YOU ENTERED TO SYSTEM");
+            } else {
+                System.out.println("WRONG ENTERENCE. YOU COULD NOT ENTER TO SYSTEM... ");
+                System.out.print("WOULD YOU LIKE TO RESET YOUR PASSWORD?  ---> ");
+                y = input.nextLine();
+                if(y.equals("yes")) {  // if you say "yes"...
+                    System.out.print("CREATE A NEW PASSWORD: ");
+                    password1 = input.nextLine();
+                    if(password1.equals("java123")) {
+                        System.out.println("PASSWORD COULD NOT CREATE. TRY AGAİN...");
+                    } else {
+                        System.out.println("NEW PASSWORD IS CREATED:  ");
+                    }
+
+                } else {
+                    System.out.println("NEW PASSWORD IS NOT CREATED, THE END.");
+                }
+            }
+
+
+
+
+        }
+
+}
