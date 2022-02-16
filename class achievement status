@@ -1,0 +1,34 @@
+// class achievement status
+import java.util.Scanner;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int mathematics, physics, chemistry, Turkish, music;
+        System.out.print("ENTER YOUR MATHEMATICS NOTE: ");
+        mathematics = input.nextInt();
+        System.out.print("ENTER YOUR PHYSICS NOTE: ");
+        physics = input.nextInt();
+        System.out.print("ENTER YOUR CHEMISTRY NOTE: ");
+        chemistry = input.nextInt();
+        System.out.print("ENTER YOUR TURKISH NOTE: ");
+        Turkish = input.nextInt();
+        System.out.print("ENTER YOUR MUSIC NOTE: ");
+        music = input.nextInt();
+        if((mathematics>=0 && mathematics<=100) && (physics>=0 && physics<=100) && (chemistry>=0 && chemistry<=100) &&
+            (physics>=0 && physics<=100) && (Turkish>=0 && Turkish<=100) && (music>=0 && music<=100) ) {
+            double average = (double) (mathematics + physics + chemistry + Turkish + music)/5;
+            if(average>=55) {
+                System.out.println("YOU PASS THE CLASS");
+            } else {
+                System.out.println("YOU DO NOT PASS THE CLASS");
+            }
+            System.out.print("YOUR AVERAGE: "+average);
+        }
+
+
+
+
+
+        }
+
+}
