@@ -1,0 +1,27 @@
+// program of suggesting activities
+import java.util.Scanner;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("ENTER THE HEAT: ");
+        int heat = input.nextInt();
+        if(heat < 5) {
+            System.out.print("YOU CAN DO SKI.");
+        } else if(heat >= 5 && heat < 15) {
+            System.out.print("YOU CAN GO CINEMA.");
+        } else if(heat == 15) {
+            System.out.print("YOU CAN GO CINEMA OR PICNIC.");
+        } else if(heat > 15 && heat<=25) {
+            System.out.print("YOU CAN GO PICNIC.");
+        } else {
+            System.out.print("YOU CAN GO SWIMMING.");
+        }
+
+
+
+
+
+
+        }
+
+}
